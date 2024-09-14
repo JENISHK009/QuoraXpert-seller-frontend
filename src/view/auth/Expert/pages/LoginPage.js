@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import {
   Box,
-  Button,
   TextField,
   Typography,
   Container,
@@ -81,15 +80,6 @@ const StyledTextField = styled(TextField)(({ theme }) => ({
   },
 }));
 
-const StyledButton = styled(Button)(({ theme }) => ({
-  marginTop: theme.spacing(2),
-  padding: theme.spacing(1.5),
-  borderRadius: "10px",
-  fontWeight: 600,
-  textTransform: "none",
-  fontSize: "1rem",
-}));
-
 export default function LoginPage() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -113,8 +103,8 @@ export default function LoginPage() {
     register,
     handleSubmit,
     formState: { errors },
-    setValue,
-    trigger,
+    // setValue,
+    // trigger,
   } = useForm();
 
   useEffect(() => {

@@ -26,21 +26,21 @@ const ProfileStep = ({ control, errors, categoriesData }) => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedSubcategories, setSelectedSubcategories] = useState([]);
-  const [selectedNestedSubcategories, setSelectedNestedSubcategories] =
-    useState([]);
+  // const [selectedNestedSubcategories, setSelectedNestedSubcategories] =
+  //   useState([]);
 
   const handleCategoryChange = (event, onChange) => {
     const selectedCategoryIds = event.target.value;
     setSelectedCategories(selectedCategoryIds);
     setSelectedSubcategories([]);
-    setSelectedNestedSubcategories([]);
+    // setSelectedNestedSubcategories([]);
     onChange(selectedCategoryIds);
   };
 
   const handleSubcategoryChange = (event, onChange) => {
     const selectedSubcategoryIds = event.target.value;
     setSelectedSubcategories(selectedSubcategoryIds);
-    setSelectedNestedSubcategories([]);
+    // setSelectedNestedSubcategories([]);
     onChange(selectedSubcategoryIds);
   };
 

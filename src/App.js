@@ -1,11 +1,11 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 import LoaderComponent from "./component/Core/LoaderComponent";
 // import "./assets/scss/fonts.scss";
 
 // Lazy-loaded Pages
-const PrivateRoute = lazy(() => import("./utils/PrivateRoute"));
+// const PrivateRoute = lazy(() => import("./utils/PrivateRoute"));
 // const HomePage = lazy(() => import("./pages/HomePage"));
 //Auth Pages
 const LoginPage = lazy(() => import("./view/auth/Expert/pages/LoginPage"));
@@ -19,8 +19,8 @@ const UnAuthorized = lazy(() =>
 );
 
 const App = () => {
-  const dispatch = useDispatch();
-  const token = sessionStorage.getItem("userToken");
+  // const dispatch = useDispatch();
+  // const token = sessionStorage.getItem("userToken");
 
   return (
     <BrowserRouter>

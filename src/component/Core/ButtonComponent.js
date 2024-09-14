@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Button, CircularProgress, SxProps, Theme } from "@mui/material";
+import { Button, CircularProgress } from "@mui/material";
 
 const CustomButton = styled(Button)({
   textTransform: "none",

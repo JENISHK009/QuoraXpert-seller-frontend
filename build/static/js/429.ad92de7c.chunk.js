@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkquoraxpert=self.webpackChunkquoraxpert||[]).push([[429],{9429:(e,s,r)=>{r.r(s),r.d(s,{default:()=>o});r(5043);var t=r(3216);var a=r(579);const o=()=>sessionStorage.getItem("userToken")?(0,a.jsx)(t.sv,{}):(0,a.jsx)(t.C5,{to:"/login"})}}]);
+//# sourceMappingURL=429.ad92de7c.chunk.js.map
